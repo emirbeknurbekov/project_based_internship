@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { useAuthContext } from "../contexts/AuthContext";
+import { useAuthContext } from "../../contexts/AuthContext";
 import { Navigate } from "react-router-dom";
-import { notify } from "../components/Toastify";
+import { notify } from "../../components/Toastify";
+import "./AuthPage.css";
 
 const AuthPage = () => {
   const { user, login, register } = useAuthContext();
