@@ -12,24 +12,24 @@ const Navbar = () => {
 
   return (
     <section id="header">
-      <div class="container">
-        <div class="header__logo__block">
-          <a class="header__logo__block" href="#">
+      <div className="container">
+        <div className="header__logo__block">
+          <Link className="header__logo__block" to="/">
             <img src={Logo} alt="error(" />
-            <p class="logo__descr">DevLink</p>
-          </a>
+            <p className="logo__descr">DevLink</p>
+          </Link>
         </div>
-        <div class="header__titles_block">
-          <ul class="header__titles">
+        <div className="header__titles_block">
+          <ul className="header__titles">
             <a href="#">
               <li>Project and Ideas</li>
             </a>
             <a href="#">
               <li>Events</li>
             </a>
-            <a href="#">
+            <Link to="/portfolio">
               <li>Portfolios</li>
-            </a>
+            </Link>
             <a href="#">
               <li>Search</li>
             </a>
@@ -37,24 +37,24 @@ const Navbar = () => {
         </div>
 
         {user ? (
-          <div class="header__user__block">
+          <div className="header__user__block">
             <a href="#">
-              <img src={Messages} alt="error" class="header__icons" />
+              <img src={Messages} alt="error" className="header__icons" />
             </a>
             <a href="#">
-              <img src={Notifications} alt="error" class="header__icons" />
+              <img src={Notifications} alt="error" className="header__icons" />
             </a>
-            <div class="header__username">
-              <p class="header__username__title">{user.displayName}</p>
-              <a class="header__username__img" href="#">
+            <div className="header__username">
+              <p className="header__username__title">{user.displayName}</p>
+              <Link className="header__username__img" to="/profile">
                 <img src={User} alt="error" />
-              </a>
+              </Link>
             </div>
           </div>
         ) : (
-          <div class="sign__block">
+          <div className="sign__block">
             <Link to="/auth">
-              <button class="sign__item">
+              <button className="sign__item">
                 <a href="#">Sign in</a>
                 <span>/</span>
                 <a href="#">Sign up</a>

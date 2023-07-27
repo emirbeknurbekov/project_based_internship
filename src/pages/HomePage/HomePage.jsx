@@ -10,61 +10,65 @@ import Settings from "../../assets/icons/settings.png";
 const HomePage = () => {
   return (
     <section id="main">
-      <div class="container">
-        <div class="main__block">
-          <div class="main__block_left">
-            <div class="main__block_left__wrapper">
+      <div className="container">
+        <div className="main__block">
+          <div className="main__block_left">
+            <div className="main__block_left__wrapper">
               <img src={logoAlatoo} alt="error" />
-              <h2 class="main__block_left__wrapper_descr">Computer Science </h2>
+              <h2 className="main__block_left__wrapper_descr">
+                Computer Science{" "}
+              </h2>
             </div>
-            <div class="main__block_left__descr">
-              <div class="main__block_left__descr__slogan">
+            <div className="main__block_left__descr">
+              <div className="main__block_left__descr__slogan">
                 <p>"Unlock Your Potential in the World of Programming"</p>
               </div>
-              <button class="main__block_left__descr__btn">Start NOW</button>
+              <button className="main__block_left__descr__btn">
+                Start NOW
+              </button>
             </div>
           </div>
-          <div class="main__block_right">
+          <div className="main__block_right">
             <img src={mainPng} alt="error" />
           </div>
         </div>
-        <div class="news__block">
-          <div class="card">
-            <div class="card__img">
+        <div className="news__block">
+          <div className="card">
+            <div className="card__img">
               <img src={news1} alt="error" />
             </div>
-            <div class="card__title">
-              <p class="card__title__date">24.09.2023</p>
-              <p class="crad__title__descr">
+            <div className="card__title">
+              <p className="card__title__date">24.09.2023</p>
+              <p className="crad__title__descr">
                 DEV/Pub Matchmaking Meetup with Nordic Game Community <br />
                 Do not miss !!!A block 203 16:00
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card__img">
+          <div className="card">
+            <div className="card__img">
               <img src={news2} alt="error" />
             </div>
-            <div class="card__title">
-              <p class="card__title__date">24.09.2023</p>
-              <p class="crad__title__descr">
+            <div className="card__title">
+              <p className="card__title__date">24.09.2023</p>
+              <p className="crad__title__descr">
                 Professor of University Clermon-Overn VISITED MUA
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card__img">
+          <div className="card">
+            <div className="card__img">
               <img src={event3} alt="error" />
             </div>
-            <div class="card__title">
-              <p class="card__title__date">15.08.2023</p>
-              <p class="crad__title__descr">Open lesson Day</p>
+            <div className="card__title">
+              <p className="card__title__date">15.08.2023</p>
+              <p className="crad__title__descr">Open lesson Day</p>
             </div>
           </div>
         </div>
       </div>
       <a href="#">
-        <img src={Settings} alt="error" class="settings" />
+        <img src={Settings} alt="error" className="settings" />
       </a>
     </section>
   );
